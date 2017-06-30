@@ -75,6 +75,11 @@ class MainActivity : AppCompatActivity() {
                             navigate<NestedActivity>()
                         }
                     }
+                    button("ImageCycle") {
+                        onClick { view ->
+                            navigate<ImageCycleActivity>()
+                        }
+                    }
                 }
             }
         }
