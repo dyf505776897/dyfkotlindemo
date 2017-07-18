@@ -40,6 +40,8 @@
         <activity android:name=".CloclActivity" />
         <activity android:name=".NestedActivity" />
         <activity android:name=".ImageCycleActivity" />
+        <activity android:name=".RecyleActivity" />
+        <activity android:name=".DataActivity" />
     </application>
 
 </manifest>

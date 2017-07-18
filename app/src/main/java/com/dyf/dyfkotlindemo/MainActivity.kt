@@ -13,71 +13,78 @@ class MainActivity : AppCompatActivity() {
     inner class UI : AnkoComponent<MainActivity> {
         override fun createView(ui: AnkoContext<MainActivity>): View {
             return with(ui){
-                verticalLayout {
-                    val textView=textView("我是一个TextView"){
-                        textSize = sp(17).toFloat()
-                        textColor=context.resources.getColor(R.color.red)
-                    }.lparams{
-                        margin=dip(10)
-                        height= wrapContent
-                        width= matchParent
-                    }
-                    val name = editText("EditText")
-                    button("Button") {
-                        onClick { view ->
-                            toast("Hello, ${name.text}!")
-                            //
-                            alert ("我是Dialog"){
-                                yesButton {
-                                    toast("yes")
-                                    doAsync {
-                                        //后台执行代码
-                                        uiThread {
-                                            //UI线程
-                                            toast("线程${Thread.currentThread().name}")
+                scrollView {
+                    verticalLayout {
+                        val textView=textView("我是一个TextView"){
+                            textSize = sp(17).toFloat()
+                            textColor=context.resources.getColor(R.color.red)
+                        }.lparams{
+                            margin=dip(10)
+                            height= wrapContent
+                            width= matchParent
+                        }
+                        val name = editText("EditText")
+                        button("Button") {
+                            onClick { view ->
+                                toast("Hello, ${name.text}!")
+                                //
+                                alert ("我是Dialog"){
+                                    yesButton {
+                                        toast("yes")
+                                        doAsync {
+                                            //后台执行代码
+                                            uiThread {
+                                                //UI线程
+                                                toast("线程${Thread.currentThread().name}")
 
+                                            }
                                         }
                                     }
-                                }
-                                noButton {  toast("no")}
-                            }.show()
+                                    noButton {  toast("no")}
+                                }.show()
+                            }
                         }
-                    }
 
 
-                    button("Socket IPC ") {
-                        onClick { view ->
-                            navigate<TCPClientActivity>()
+                        button("Socket IPC ") {
+                            onClick { view ->
+                                navigate<TCPClientActivity>()
+                            }
                         }
-                    }
-                    button("utest") {
-                        onClick { view ->
-                            navigate<UActivity>()
+                        button("utest") {
+                            onClick { view ->
+                                navigate<UActivity>()
+                            }
                         }
-                    }
-                    button("myTest") {
-                        onClick { view ->
-                            navigate<MyTestActivity>()
+                        button("myTest") {
+                            onClick { view ->
+                                navigate<MyTestActivity>()
+                            }
                         }
-                    }
-                    button("DragView") {
-                        onClick { view ->
-                            navigate<DragViewActivity>()
+                        button("DragView") {
+                            onClick { view ->
+                                navigate<DragViewActivity>()
+                            }
                         }
-                    }
-                    button("Clock") {
-                        onClick { view ->
-                            navigate<CloclActivity>()
+                        button("Clock") {
+                            onClick { view ->
+                                navigate<CloclActivity>()
+                            }
                         }
-                    }
-                    button("Nested") {
-                        onClick { view ->
-                            navigate<NestedActivity>()
+                        button("Nested") {
+                            onClick { view ->
+                                navigate<NestedActivity>()
+                            }
                         }
-                    }
-                    button("ImageCycle") {
-                        onClick { view ->
-                            navigate<ImageCycleActivity>()
+                        button("ImageCycle") {
+                            onClick { view ->
+                                navigate<RecyleActivity>()
+                            }
+                        }
+                        button("litepal") {
+                            onClick { view ->
+                                navigate<DataActivity>()
+                            }
                         }
                     }
                 }
