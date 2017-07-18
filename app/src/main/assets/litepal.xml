@@ -6,6 +6,9 @@
 
     <list>
         <mapping class="com.dyf.dyfkotlindemo.model.data.Book"></mapping>
+        <mapping class="com.dyf.coolweather.android.db.Province"></mapping>
+        <mapping class="com.dyf.coolweather.android.db.City"></mapping>
+        <mapping class="com.dyf.coolweather.android.db.County"></mapping>
     </list>
 
 </litepal>
