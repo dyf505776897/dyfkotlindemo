@@ -86,6 +86,11 @@ class MainActivity : AppCompatActivity() {
                                 navigate<DataActivity>()
                             }
                         }
+                        button("weather demo") {
+                            onClick { view ->
+                                navigate<com.dyf.coolweather.android.MainActivity>()
+                            }
+                        }
                     }
                 }
             }
