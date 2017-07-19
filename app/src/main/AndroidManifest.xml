@@ -43,6 +43,7 @@
         <activity android:name=".RecyleActivity" />
         <activity android:name=".DataActivity" />
         <activity android:name="com.dyf.coolweather.android.MainActivity" />
+        <activity android:name="com.dyf.coolweather.android.WeatherActivity" />
     </application>
 
 </manifest>
