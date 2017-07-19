@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dyf.dyfkotlindemo">
 
-
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
 
     <application
         android:name=".ui.MyApplication"
@@ -24,14 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DemoActivity"></activity>
+        <activity android:name=".DemoActivity" />
 
         <service
             android:name=".ipcdemo.socket.TCPServerService"
             android:enabled="true"
             android:exported="true"
-            android:process=":remote"
-            />
+            android:process=":remote" />
 
         <activity android:name=".ipcdemo.socket.TCPClientActivity" />
         <activity android:name=".UActivity" />
@@ -44,6 +39,11 @@
         <activity android:name=".DataActivity" />
         <activity android:name="com.dyf.coolweather.android.MainActivity" />
         <activity android:name="com.dyf.coolweather.android.WeatherActivity" />
+
+        <service
+            android:name="com.dyf.coolweather.android.service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
