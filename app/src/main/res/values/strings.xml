@@ -16,4 +16,8 @@
     </string>
 
     <string name="database">data test</string>
+
+    <string name="_lease_open_permissions">请打开权限</string>
+    <string name="choose_wallpaper">关闭动态壁纸</string>
+
 </resources>

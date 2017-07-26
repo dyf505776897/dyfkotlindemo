@@ -91,6 +91,11 @@ class MainActivity : AppCompatActivity() {
                                 navigate<com.dyf.coolweather.android.MainActivity>()
                             }
                         }
+                        button("wallpaper demo") {
+                            onClick { view ->
+                                navigate<com.dyf.dyfkotlindemo.wallpaper.MainActivity>()
+                            }
+                        }
                     }
                 }
             }
