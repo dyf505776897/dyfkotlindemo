@@ -8,9 +8,15 @@
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
-
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+
 
     <application
         android:name=".ui.MyApplication"
@@ -47,6 +53,9 @@
         <activity android:name="com.dyf.coolweather.android.MainActivity" />
         <activity android:name="com.dyf.coolweather.android.WeatherActivity" />
         <activity android:name=".wallpaper.MainActivity" />
+        <activity android:name=".audio.MainActivity" />
+        <activity android:name=".bluetooth.BlueActivity" />
+        <activity android:name=".bluetooth.blue.BlueActivity" />
 
         <service
             android:name="com.dyf.coolweather.android.service.AutoUpdateService"
@@ -68,6 +77,7 @@
             <meta-data android:name="android.service.wallpaper"
                 android:resource="@xml/livewallpaper"/>
         </service>
+        <service android:name=".bluetooth.blue.BluetoothService" />
 
     </application>
 

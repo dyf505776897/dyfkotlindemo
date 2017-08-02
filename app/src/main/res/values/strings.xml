@@ -20,4 +20,6 @@
     <string name="_lease_open_permissions">请打开权限</string>
     <string name="choose_wallpaper">关闭动态壁纸</string>
 
+    <string name="permission_failure">权限获取失败</string>
+
 </resources>
