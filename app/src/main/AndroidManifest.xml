@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 
     <application
@@ -56,6 +56,9 @@
         <activity android:name=".audio.MainActivity" />
         <activity android:name=".bluetooth.BlueActivity" />
         <activity android:name=".bluetooth.blue.BlueActivity" />
+        <activity android:name=".nohttp.MainActivity" />
+        <activity android:name=".saolei.MainActivity" />
+        <activity android:name=".saolei.PaiHangActivity" />
 
         <service
             android:name="com.dyf.coolweather.android.service.AutoUpdateService"

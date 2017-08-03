@@ -170,6 +170,25 @@ class MainActivity : AppCompatActivity() {
                             height= wrapContent
                             width= matchParent
                         }
+                        button("nohttp demo") {
+                            onClick { view ->
+                                navigate<com.dyf.dyfkotlindemo.nohttp.MainActivity>()
+                            }
+                        }.lparams{
+                            margin=dip(20)
+                            height= wrapContent
+                            width= matchParent
+                        }
+
+                        button("saolei demo") {
+                            onClick { view ->
+                                navigate<com.dyf.dyfkotlindemo.saolei.MainActivity>()
+                            }
+                        }.lparams{
+                            margin=dip(20)
+                            height= wrapContent
+                            width= matchParent
+                        }
                     }
                 }
             }
