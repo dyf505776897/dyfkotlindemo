@@ -59,6 +59,7 @@
         <activity android:name=".nohttp.MainActivity" />
         <activity android:name=".saolei.MainActivity" />
         <activity android:name=".saolei.PaiHangActivity" />
+        <activity android:name=".ShaderEffect" />
 
         <service
             android:name="com.dyf.coolweather.android.service.AutoUpdateService"

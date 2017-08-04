@@ -189,6 +189,16 @@ class MainActivity : AppCompatActivity() {
                             height= wrapContent
                             width= matchParent
                         }
+
+                        button("ShaderEffect demo") {
+                            onClick { view ->
+                                navigate<ShaderEffect>()
+                            }
+                        }.lparams{
+                            margin=dip(20)
+                            height= wrapContent
+                            width= matchParent
+                        }
                     }
                 }
             }
