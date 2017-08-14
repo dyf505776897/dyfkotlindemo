@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.dyf.dyfkotlindemo.bluetooth.BlueActivity
 import com.dyf.dyfkotlindemo.ipcdemo.socket.TCPClientActivity
+import com.dyf.dyfkotlindemo.weex.IndexActivity
 import org.jetbrains.anko.*
 
 class MainActivity : AppCompatActivity() {
@@ -193,6 +194,26 @@ class MainActivity : AppCompatActivity() {
                         button("ShaderEffect demo") {
                             onClick { view ->
                                 navigate<ShaderEffect>()
+                            }
+                        }.lparams{
+                            margin=dip(20)
+                            height= wrapContent
+                            width= matchParent
+                        }
+
+                        button("weex demo") {
+                            onClick { view ->
+                                navigate<IndexActivity>()
+                            }
+                        }.lparams{
+                            margin=dip(20)
+                            height= wrapContent
+                            width= matchParent
+                        }
+
+                        button("weex joke demo") {
+                            onClick { view ->
+                                navigate<com.github.zhoukekestar.weexquickstart.SplashActivity>()
                             }
                         }.lparams{
                             margin=dip(20)
