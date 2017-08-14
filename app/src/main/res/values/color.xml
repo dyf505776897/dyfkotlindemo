@@ -43,5 +43,9 @@
     <color name="set_font_lightBlack">#656565</color>
     <color name="province_line_border">#C7C7C7</color>
 
+    <color name="user_query_highlight">#335b5b5b</color>
+    <color name="secondary_text_dark">#99F44B4D</color>
+    <color name="primary_text_dark">#99F44B4D</color>
+
 
 </resources>
